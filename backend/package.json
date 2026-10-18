@@ -1,0 +1,12 @@
+{
+  "name": "jumshak-backend",
+  "version": "1.0.0",
+  "description": "JUMSHAK backend API: каталог, заказы, админ-панель. Node.js без внешних зависимостей.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

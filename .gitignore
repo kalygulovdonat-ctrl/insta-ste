@@ -1,0 +1,5 @@
+backend/data/
+backend/uploads/
+backend/.env
+.zwork/
+tools/out/

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jumshak.rooms — одежда, в которой живёт уют</title>
+  <meta name="description" content="Jumshak — твоя вторая нежность. Нежные кардиганы, кофточки и база на каждый день из Бишкека. Доставка по Кыргызстану, Казахстану и России.">
+  <meta name="theme-color" content="#F7F2E9">
+  <meta property="og:title" content="jumshak.rooms — одежда, в которой живёт уют">
+  <meta property="og:description" content="Нежные кардиганы, кофточки и база на каждый день. Доставка по КР, KZ и РФ.">
+  <meta property="og:image" content="assets/img/hero.jpg">
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- иконки -->
+<svg class="sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-butterfly" viewBox="0 0 64 64">
+    <path d="M32 16c-2.2-7.2-13-12.4-20-7.4-6.6 4.8-2.4 15.2 12 19.2-14.4 4-18.6 14.4-12 19.2 7 5 17.8-.2 20-7.4 2.2 7.2 13 12.4 20 7.4 6.6-4.8 2.4-15.2-12-19.2 14.4-4 18.6-14.4 12-19.2-7-5-17.8.2-20 7.4Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+    <path d="M32 16v24.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+    <path d="M29.4 13.4 26 7.8M34.6 13.4 38 7.8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24">
+    <path d="M12 20.2s-7.6-4.6-9.4-9.2C1.2 7 3.2 4 6.4 4c2 0 3.6 1.1 4.6 2.7l1 1.5 1-1.5C14 5.1 15.6 4 17.6 4c3.2 0 5.2 3 3.8 7-1.8 4.6-9.4 9.2-9.4 9.2Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24">
+    <path d="M5.5 8.5h13l1 12h-15l1-12Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+    <path d="M9 8.5V6.8a3 3 0 0 1 6 0v1.7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-search" viewBox="0 0 24 24">
+    <circle cx="11" cy="11" r="6.4" fill="none" stroke="currentColor" stroke-width="1.7"/>
+    <path d="m16 16 4.6 4.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24">
+    <path d="M12 2.8a9.1 9.1 0 0 0-7.8 13.8L3 21.2l4.7-1.2A9.1 9.1 0 1 0 12 2.8Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+    <path d="M17.4 14.2c-.3-.1-1.6-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.4-1.8-.1-.3 0-.4.1-.5.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.3 0-.4 0-.1-.7-1.7-.9-2.3-.2-.5-.5-.5-.7-.5h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2 0 1.3.9 2.6 1 2.8.1.2 1.8 2.7 4.4 3.8 2.6 1.1 2.6.7 3 .7.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2 0-.1-.1-.2-.3-.3Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24">
+    <rect x="3.4" y="3.4" width="17.2" height="17.2" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+    <circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="1.6"/>
+    <circle cx="17.2" cy="6.9" r="1.1" fill="currentColor"/>
+  </symbol>
+  <symbol id="i-close" viewBox="0 0 24 24">
+    <path d="M5 5l14 14M19 5 5 19" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24">
+    <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24">
+    <path d="M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-check" viewBox="0 0 24 24">
+    <path d="m4.5 12.6 5 5L19.5 6.8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24">
+    <path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="i-star" viewBox="0 0 24 24">
+    <path d="m12 3.6 2.6 5.4 5.9.8-4.3 4.1 1 5.8-5.2-2.8-5.2 2.8 1-5.8L3.5 9.8l5.9-.8L12 3.6Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="i-box" viewBox="0 0 24 24">
+    <path d="M4 8.2 12 4l8 4.2v7.6L12 20l-8-4.2V8.2Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="m4.4 8.4 7.6 4 7.6-4M12 12.4V20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="i-plane" viewBox="0 0 24 24">
+    <path d="M3 11.4 21 4l-4.2 16.4-4.6-5.2-3.4 3v-4.4L3 11.4Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24">
+    <path d="M3 7h10v9H3zM13 10h4l3 3v3h-7z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    <circle cx="7" cy="17.6" r="1.7" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <circle cx="16.4" cy="17.6" r="1.7" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  </symbol>
+</svg>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a class="logo" href="#top" aria-label="jumshak.rooms — на главную">
+      <img class="logo__img" src="assets/img/logo.png" alt="">
+      <span class="logo__text">jumshak<em>.rooms</em></span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#catalog">Каталог</a>
+      <a href="#about">О бренде</a>
+      <a href="#delivery">Доставка</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#faq">Вопросы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+
+    <div class="header__actions">
+      <button class="icon-btn" id="favBtn" type="button" aria-label="Избранное">
+        <svg class="ic"><use href="#i-heart"/></svg>
+        <span class="icon-btn__count" id="favCount" hidden>0</span>
+      </button>
+      <button class="icon-btn" id="cartBtn" type="button" aria-label="Корзина">
+        <svg class="ic"><use href="#i-bag"/></svg>
+        <span class="icon-btn__count" id="cartCount" hidden>0</span>
+      </button>
+      <a class="btn btn--wa btn--sm header__wa" id="headerWa" href="#" target="_blank" rel="noopener">
+        <svg class="ic"><use href="#i-wa"/></svg><span>WhatsApp</span>
+      </a>
+      <button class="burger" id="burger" type="button" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <svg class="hero__butterfly hero__butterfly--a" aria-hidden="true"><use href="#i-butterfly"/></svg>
+    <svg class="hero__butterfly hero__butterfly--b" aria-hidden="true"><use href="#i-butterfly"/></svg>
+
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <p class="overline reveal">бишкек · кыргызстан · казахстан · россия</p>
+        <h1 class="hero__title reveal">Одежда,<br>в которой живёт <em>уют</em></h1>
+        <p class="hero__sub reveal">Jumshak — твоя вторая нежность. Нежные кардиганы, кофточки и база на каждый день. Подбираем, отпариваем и бережно упаковываем каждую вещь.</p>
+        <div class="hero__cta reveal">
+          <a href="#catalog" class="btn btn--dark">Смотреть каталог <svg class="ic"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn--light" id="heroWa" href="#" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Написать в WhatsApp</a>
+        </div>
+        <ul class="hero__stats reveal">
+          <li><b>23,1 тыс.</b><span>подписчиков в Instagram</span></li>
+          <li><b>280+</b><span>образов в ленте</span></li>
+          <li><b>3</b><span>страны доставки</span></li>
+        </ul>
+      </div>
+
+      <div class="hero__media reveal">
+        <div class="hero__arch">
+          <img src="assets/img/hero.jpg" alt="Стойка Jumshak с нежными кардиганами и базой" width="553" height="975">
+        </div>
+        <div class="hero__badge">
+          <img src="assets/img/logo.png" alt="" width="52" height="52">
+          <div>
+            <b>ручная упаковка</b>
+            <span>каждой посылки — с запиской</span>
+          </div>
+        </div>
+        <div class="hero__chip">🦋 доставляем в КР · KZ · RU</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- бегущая строка -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>нежность</span><i>✦</i><span>уют</span><i>✦</i><span>бишкек</span><i>✦</i><span>доставка по КР · KZ · RU</span><i>✦</i><span>бережная упаковка</span><i>✦</i><span>ручной отбор</span><i>✦</i>
+      <span>нежность</span><i>✦</i><span>уют</span><i>✦</i><span>бишкек</span><i>✦</i><span>доставка по КР · KZ · RU</span><i>✦</i><span>бережная упаковка</span><i>✦</i><span>ручной отбор</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- КАТАЛОГ -->
+  <section class="section catalog" id="catalog">
+    <div class="container">
+      <div class="section__head reveal">
+        <div>
+          <p class="overline">каталог</p>
+          <h2>Выберите свою <em>нежность</em></h2>
+        </div>
+        <div class="catalog__tools">
+          <label class="search">
+            <svg class="ic"><use href="#i-search"/></svg>
+            <input type="search" id="searchInput" placeholder="Найти вещь…" autocomplete="off">
+          </label>
+        </div>
+      </div>
+
+      <div class="chips reveal" id="chips">
+        <button class="chip is-active" data-cat="all" type="button">Все</button>
+        <button class="chip" data-cat="cardigans" type="button">Кардиганы</button>
+        <button class="chip" data-cat="knits" type="button">Кофточки</button>
+        <button class="chip" data-cat="longsleeves" type="button">Лонгсливы</button>
+        <button class="chip" data-cat="shirts" type="button">Рубашки</button>
+      </div>
+
+      <div class="grid" id="catalogGrid"></div>
+      <div class="empty" id="catalogEmpty" hidden>
+        <svg class="empty__ic"><use href="#i-butterfly"/></svg>
+        <p>Ничего не нашлось — попробуйте другой запрос или посмотрите все вещи.</p>
+        <button class="btn btn--light" id="resetFilters" type="button">Сбросить фильтры</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- О БРЕНДЕ -->
+  <section class="section about" id="about">
+    <div class="container about__grid">
+      <div class="about__media reveal">
+        <div class="about__frame">
+          <img src="assets/img/style.jpg" alt="Образ Jumshak: красный лонгслив и бежевые брюки" loading="lazy">
+        </div>
+        <div class="about__note">
+          <svg class="ic"><use href="#i-butterfly"/></svg>
+          <span>вторая нежность —<br>это про Jumshak</span>
+        </div>
+      </div>
+
+      <div class="about__copy reveal">
+        <p class="overline">о бренде</p>
+        <h2>Маленький бренд<br>с большим сердцем</h2>
+        <p>Мы — Jumshak из Бишкека. Собираем одежду, в которой хочется остаться дома подольше: мягкие кардиганы, облачные кофточки, аккуратные рубашки.</p>
+        <p>Каждую вещь проверяем руками — швы, посадку, ткань. Отпариваем, складываем и отправляем в бережной упаковке, как подарок себе.</p>
+        <blockquote>«Нежность — это не стиль. Это ощущение, в котором хочется жить».</blockquote>
+        <ul class="about__list">
+          <li><svg class="ic"><use href="#i-butterfly"/></svg> ручной отбор вещей</li>
+          <li><svg class="ic"><use href="#i-butterfly"/></svg> упаковка с запиской</li>
+          <li><svg class="ic"><use href="#i-butterfly"/></svg> доставка в 3 страны</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ДОСТАВКА -->
+  <section class="section delivery" id="delivery">
+    <div class="container">
+      <div class="section__head section__head--center reveal">
+        <p class="overline">доставка</p>
+        <h2>Доставим <em>бережно</em> и быстро</h2>
+        <p class="section__sub" id="deliveryNote">Доставляем по всему Кыргызстану, Казахстану и России — заботливо и быстро.</p>
+      </div>
+
+      <div class="delivery__grid">
+        <article class="delivery__card reveal">
+          <div class="delivery__icon"><svg class="ic"><use href="#i-truck"/></svg></div>
+          <h3>Кыргызстан</h3>
+          <p>Бишкек — 1–2 дня, регионы — 2–4 дня. Курьер или самовывоз по договорённости.</p>
+          <span class="delivery__tag">от 1 дня</span>
+        </article>
+        <article class="delivery__card reveal">
+          <div class="delivery__icon"><svg class="ic"><use href="#i-plane"/></svg></div>
+          <h3>Казахстан</h3>
+          <p>3–7 дней. Отправляем каждую неделю, трек-номер пришлём прямо в WhatsApp.</p>
+          <span class="delivery__tag">3–7 дней</span>
+        </article>
+        <article class="delivery__card reveal">
+          <div class="delivery__icon"><svg class="ic"><use href="#i-box"/></svg></div>
+          <h3>Россия</h3>
+          <p>5–10 дней. Надёжная упаковка и отслеживание посылки на всём пути.</p>
+          <span class="delivery__tag">5–10 дней</span>
+        </article>
+      </div>
+
+      <div class="delivery__note reveal">
+        <svg class="ic"><use href="#i-heart"/></svg>
+        <p>Оплата — после подтверждения заказа в WhatsApp: комфортно обсудим все детали и выберем удобный способ.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ОТЗЫВЫ -->
+  <section class="section reviews" id="reviews">
+    <div class="container">
+      <div class="section__head reveal">
+        <div>
+          <p class="overline">отзывы</p>
+          <h2>Нам <em>пишут</em></h2>
+        </div>
+        <a class="reviews__link" id="reviewsIg" href="#" target="_blank" rel="noopener">отзывы в Instagram <svg class="ic"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="reviews__grid" id="reviewsGrid"></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq" id="faq">
+    <div class="container faq__grid">
+      <div class="reveal">
+        <p class="overline">вопрос — ответ</p>
+        <h2>Часто <em>спрашивают</em></h2>
+        <p class="faq__lead">Не нашли ответ? Напишите в WhatsApp — отвечаем ежедневно с 10:00 до 20:00.</p>
+        <a class="btn btn--light" id="faqWa" href="#" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Задать вопрос</a>
+      </div>
+
+      <div class="faq__list reveal">
+        <details class="faq__item" open>
+          <summary>Как оформить заказ?</summary>
+          <div class="faq__answer">Выберите вещь в каталоге, добавьте в корзину и заполните короткую форму. Заказ сохранится у нас, а WhatsApp откроется с готовым сообщением — останется нажать «Отправить».</div>
+        </details>
+        <details class="faq__item">
+          <summary>Как понять, подойдёт ли размер?</summary>
+          <div class="faq__answer">Почти все модели — размер «стандарт» (условно 42–48). В карточке указаны состав и посадка, а точные замеры бесплатно пришлём в WhatsApp.</div>
+        </details>
+        <details class="faq__item">
+          <summary>Сколько идёт доставка?</summary>
+          <div class="faq__answer">Бишкек — 1–2 дня, регионы Кыргызстана — 2–4 дня, Казахстан — 3–7 дней, Россия — 5–10 дней.</div>
+        </details>
+        <details class="faq__item">
+          <summary>Можно ли примерить?</summary>
+          <div class="faq__answer">Да, в Бишкеке можно договориться о примерке — напишите нам в WhatsApp, подберём удобное время.</div>
+        </details>
+        <details class="faq__item">
+          <summary>Что делать, если вещь не подошла?</summary>
+          <div class="faq__answer">Напишите нам в течение суток после получения — обсудим обмен или возврат по-человечески.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- КОНТАКТЫ -->
+  <section class="section contacts" id="contacts">
+    <div class="container">
+      <div class="contacts__panel reveal">
+        <svg class="contacts__butterfly" aria-hidden="true"><use href="#i-butterfly"/></svg>
+        <div class="contacts__copy">
+          <p class="overline overline--light">давайте знакомиться</p>
+          <h2>Готовы<br>к <em>обновке?</em></h2>
+          <p>Напишите нам — поможем выбрать, подскажем по размеру и бережно упакуем.</p>
+          <div class="contacts__cta">
+            <a class="btn btn--wa" id="contactsWa" href="#" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Написать в WhatsApp</a>
+            <a class="btn btn--outline-light" id="contactsIg" href="#" target="_blank" rel="noopener"><svg class="ic"><use href="#i-ig"/></svg> @jumshak.rooms</a>
+          </div>
+        </div>
+        <ul class="contacts__info">
+          <li><b>Город</b><span id="siteCity">Бишкек, Кыргызстан</span></li>
+          <li><b>Ответим</b><span>ежедневно, 10:00–20:00</span></li>
+          <li><b>Доставка</b><span>Кыргызстан · Казахстан · Россия</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a class="logo" href="#top">
+        <img class="logo__img" src="assets/img/logo.png" alt="">
+        <span class="logo__text">jumshak<em>.rooms</em></span>
+      </a>
+      <p>одежда, в которой живёт уют</p>
+    </div>
+    <nav class="footer__nav">
+      <a href="#catalog">Каталог</a>
+      <a href="#about">О бренде</a>
+      <a href="#delivery">Доставка</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <div class="footer__meta">
+      <p>© <span id="year">2026</span> jumshak.rooms · Бишкек</p>
+      <a href="/admin" class="footer__admin">вход для администратора</a>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" id="fabWa" href="#" target="_blank" rel="noopener" aria-label="Написать в WhatsApp">
+  <svg class="ic"><use href="#i-wa"/></svg>
+</a>
+
+<!-- Корзина -->
+<div class="drawer" id="cartDrawer" aria-hidden="true">
+  <div class="drawer__backdrop" data-close="cart"></div>
+  <aside class="drawer__panel" role="dialog" aria-modal="true" aria-label="Корзина">
+    <header class="drawer__head">
+      <h3>Корзина</h3>
+      <button class="icon-btn icon-btn--plain" data-close="cart" type="button" aria-label="Закрыть">
+        <svg class="ic"><use href="#i-close"/></svg>
+      </button>
+    </header>
+    <div class="drawer__body" id="cartList"></div>
+    <footer class="drawer__foot">
+      <div class="drawer__total"><span>Итого</span><b id="cartTotal">0 сом</b></div>
+      <button class="btn btn--dark btn--wide" id="cartCheckout" type="button">Оформить заказ <svg class="ic"><use href="#i-arrow"/></svg></button>
+      <p class="drawer__hint">Заказ сохранится у нас, а WhatsApp откроется с готовым сообщением.</p>
+    </footer>
+  </aside>
+</div>
+
+<!-- Избранное -->
+<div class="drawer" id="favDrawer" aria-hidden="true">
+  <div class="drawer__backdrop" data-close="fav"></div>
+  <aside class="drawer__panel" role="dialog" aria-modal="true" aria-label="Избранное">
+    <header class="drawer__head">
+      <h3>Избранное</h3>
+      <button class="icon-btn icon-btn--plain" data-close="fav" type="button" aria-label="Закрыть">
+        <svg class="ic"><use href="#i-close"/></svg>
+      </button>
+    </header>
+    <div class="drawer__body" id="favList"></div>
+    <footer class="drawer__foot" id="favFoot" hidden>
+      <a href="#catalog" class="btn btn--light btn--wide" data-close="fav">Продолжить выбор</a>
+    </footer>
+  </aside>
+</div>
+
+<!-- Карточка товара -->
+<div class="modal" id="productModal" aria-hidden="true">
+  <div class="modal__backdrop" data-close="product"></div>
+  <div class="modal__panel modal__panel--product" role="dialog" aria-modal="true" aria-label="Товар">
+    <button class="modal__close" data-close="product" type="button" aria-label="Закрыть">
+      <svg class="ic"><use href="#i-close"/></svg>
+    </button>
+    <div class="pm__media"><img id="pmImage" src="" alt=""></div>
+    <div class="pm__body">
+      <p class="overline" id="pmCategory">кардиганы</p>
+      <h3 class="pm__name" id="pmName"></h3>
+      <div class="pm__price" id="pmPrice"></div>
+      <p class="pm__desc" id="pmDesc"></p>
+
+      <div class="pm__block" id="pmCompositionWrap">
+        <span class="pm__label">состав</span>
+        <p id="pmComposition"></p>
+      </div>
+
+      <div class="pm__block" id="pmColorsWrap">
+        <span class="pm__label">цвет</span>
+        <div class="pm__colors" id="pmColors"></div>
+      </div>
+
+      <div class="pm__block">
+        <span class="pm__label">размер</span>
+        <p class="pm__sizes" id="pmSizes">стандарт · 42–48</p>
+        <p class="pm__tip">Точные замеры пришлём в WhatsApp 🤍</p>
+      </div>
+
+      <div class="pm__actions">
+        <div class="pm__qtyline">
+          <div class="qty">
+            <button class="qty__btn" id="pmMinus" type="button" aria-label="Меньше"><svg class="ic"><use href="#i-minus"/></svg></button>
+            <span id="pmQty">1</span>
+            <button class="qty__btn" id="pmPlus" type="button" aria-label="Больше"><svg class="ic"><use href="#i-plus"/></svg></button>
+          </div>
+          <span class="pm__qtyhint">количество</span>
+        </div>
+        <div class="pm__buttons">
+          <button class="btn btn--light" id="pmAdd" type="button"><svg class="ic"><use href="#i-bag"/></svg> В корзину</button>
+          <button class="btn btn--dark" id="pmBuy" type="button">Купить сейчас <svg class="ic"><use href="#i-arrow"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Оформление заказа -->
+<div class="modal" id="checkoutModal" aria-hidden="true">
+  <div class="modal__backdrop" data-close="checkout"></div>
+  <div class="modal__panel modal__panel--checkout" role="dialog" aria-modal="true" aria-label="Оформление заказа">
+    <button class="modal__close" data-close="checkout" type="button" aria-label="Закрыть">
+      <svg class="ic"><use href="#i-close"/></svg>
+    </button>
+
+    <form class="checkout" id="coForm" novalidate>
+      <header class="checkout__head">
+        <p class="overline">почти всё</p>
+        <h3>Оформление заказа</h3>
+        <p class="checkout__sub">Заполните детали — и продолжим в WhatsApp.</p>
+      </header>
+
+      <div class="field">
+        <label for="coName">Имя *</label>
+        <input id="coName" name="name" type="text" placeholder="Как к вам обращаться" maxlength="80" required>
+      </div>
+      <div class="field">
+        <label for="coPhone">Телефон *</label>
+        <input id="coPhone" name="phone" type="tel" placeholder="+996 ___ ___ ___" maxlength="30" required>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="coCity">Город</label>
+          <input id="coCity" name="city" type="text" list="cityList" placeholder="Бишкек" maxlength="60">
+          <datalist id="cityList">
+            <option value="Бишкек"></option>
+            <option value="Ош"></option>
+            <option value="Джалал-Абад"></option>
+            <option value="Каракол"></option>
+            <option value="Алматы"></option>
+            <option value="Астана"></option>
+            <option value="Москва"></option>
+            <option value="Санкт-Петербург"></option>
+          </datalist>
+        </div>
+        <div class="field">
+          <label for="coAddress">Адрес / пункт выдачи</label>
+          <input id="coAddress" name="address" type="text" placeholder="необязательно" maxlength="200">
+        </div>
+      </div>
+      <div class="field">
+        <label for="coComment">Комментарий</label>
+        <textarea id="coComment" name="comment" rows="3" placeholder="Пожелания по цвету, упаковке, доставке…" maxlength="500"></textarea>
+      </div>
+
+      <div class="checkout__summary" id="coSummary"></div>
+      <p class="checkout__error" id="coError" hidden></p>
+
+      <button class="btn btn--dark btn--wide" id="coSubmit" type="submit">Оформить заказ <svg class="ic"><use href="#i-arrow"/></svg></button>
+      <p class="checkout__note">Нажимая кнопку, вы соглашаетесь на обработку контактных данных — только для доставки заказа.</p>
+    </form>
+
+    <div class="success" id="coSuccess" hidden>
+      <div class="success__icon"><svg class="ic"><use href="#i-check"/></svg></div>
+      <h3>Заказ принят!</h3>
+      <p class="success__num" id="coOrderId"></p>
+      <p class="success__text">Сейчас откроем WhatsApp — просто отправьте готовое сообщение, и мы подтвердим заказ и доставку.</p>
+      <a class="btn btn--wa btn--wide" id="coWa" href="#" target="_blank" rel="noopener">
+        <svg class="ic"><use href="#i-wa"/></svg> Открыть WhatsApp
+      </a>
+      <p class="success__hint" id="coAutoHint">Если WhatsApp не открылся автоматически — нажмите кнопку выше.</p>
+      <button class="btn btn--plain" data-close="checkout" type="button">Вернуться к покупкам</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
