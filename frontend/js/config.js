@@ -13,4 +13,4 @@
  * у backend через GET /api/handshake при загрузке страницы
  * (см. js/api.js) и отправляет с каждым запросом.
  */
-const API_BASE = '';
+const API_BASE = '[https://insta-ste.onrender.com](https://insta-ste.onrender.com)';
